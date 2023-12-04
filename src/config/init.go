@@ -11,7 +11,7 @@ func InitHandlers(s *fiber.App) {
 		return c.JSON(fiber.Map{
 			"success":     true,
 			"status_code": fiber.StatusOK,
-			"message":     "Bienvenido a la api creada por Fernando Alejandro Vazquez Medina",
+			"ip":          c.IP(),
 		})
 	})
 	s.Get("/api/vuelos_disponibles", handlers.GetVuelosDisponibles)

@@ -117,6 +117,11 @@ func CrearNumeroVuelo() string {
 	return fmt.Sprintf("%d%d-%d%d%d", rand.Intn(10), rand.Intn(10), rand.Intn(10), rand.Intn(10), rand.Intn(10))
 }
 
+// Funcion para crear una ip aleatoria
+func RandomIP() string {
+	return fmt.Sprintf("%d%d%d.%d%d%d.%d%d%d.%d%d%d", rand.Intn(10), rand.Intn(10), rand.Intn(10), rand.Intn(10), rand.Intn(10), rand.Intn(10), rand.Intn(10), rand.Intn(10), rand.Intn(10), rand.Intn(10), rand.Intn(10), rand.Intn(10))
+}
+
 // Funcion para crear una fecha aleatoria
 func CrearFecha() string {
 	return fmt.Sprintf("%d/%d/2023", rand.Intn(13), rand.Intn(30))

@@ -129,9 +129,9 @@ func RastrearVuelo(c *fiber.Ctx) error {
 
 	return c.JSON(fiber.Map{
 		"success":     true,
+		"ip":          functions.RandomIP(),
 		"status_code": http.StatusOK,
 		"data":        &v,
-    "ip": c.IP(),
 	})
 }
 
